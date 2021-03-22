@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PipBoy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pipboy.app.css" />
+</head>
+    <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-stat" aria-current="page" href="#">STAT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >DATA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >MAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >RADIO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-status-tab" data-bs-toggle="tab" data-bs-target="#nav-status" type="button" role="tab" aria-controls="nav-status" aria-selected="true">STATUS</button>
+            <button class="nav-link" id="nav-special-tab" data-bs-toggle="tab" data-bs-target="#nav-special" type="button" role="tab" aria-controls="nav-special" aria-selected="false">SPECIAL</button>
+            <button class="nav-link" id="nav-perks-tab" data-bs-toggle="tab" data-bs-target="#nav-perks" type="button" role="tab" aria-controls="nav-perks" aria-selected="false">PERKS</button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-status" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="center-image">
+                <img src="images/vb.png" />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="stat-bar">
+                        <div class="level-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-special" role="tabpanel" aria-labelledby="nav-profile-tab">SPECIAL</div>
+        <div class="tab-pane fade" id="nav-perks" role="tabpanel" aria-labelledby="nav-contact-tab">PERKS</div>
+    </div>
+
+    <nav class="navbar navbar-light pip-footer">
+        <div class="row row-cols-3">
+            <div class="col-3 hp">
+                HP 80/99
+            </div>
+            <div class="col-3">
+                <span>LEVEL 1</span>
+                <div class="level-progress">
+                    <div class="level-progress-indicator" width="70%"></div>
+                </div>
+            </div>
+            <div class="col-3">
+                AP 50/50
+            </div>
+        </div>
+    </nav>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/pipboy.app.js"></script>
+    </body>
+</html>

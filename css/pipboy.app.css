@@ -1,0 +1,145 @@
+@font-face {
+    font-family:Pipboy;
+    src: url('../monofonto.ttf');
+}
+
+body {
+    font-family: Pypboy;
+    color: #14fe17;
+    background: #272b23;
+}
+
+body::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.4) 1px, transparent 1px, transparent 2px);
+    opacity: .3;
+    z-index: 1000000;
+    pointer-events: none;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.navbar-light ul.navbar-nav > li {
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 25px;
+    line-height: 22px;
+}
+
+.navbar-expand-lg {
+    border-bottom: 2px solid;
+    margin: 1px 10px;
+}
+
+.navbar-expand-lg::before , .navbar-expand-lg::after {
+    height: 8px;
+    width: 3px;
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 5000;
+    background: #14fe17;
+    bottom: -10px;
+}
+
+.navbar-expand-lg::before {
+    left: 0px;
+}
+
+.navbar-expand-lg::after {
+    right: 0px;
+}
+
+ul > li.nav-item > a.nav-link {
+    color: #14fe17 !important;
+}
+
+#nav-status-tab {
+    background-color: #272b23;
+}
+
+.nav-tabs {
+    margin: 15px;
+    font-size: 18px;
+    background: transparent !important;
+    font-family: system-ui;
+    border: 1px solid transparent !important;
+    padding: 5px 10px;
+}
+
+.nav-tabs .nav-link {
+    background-color: #272b23 !important;
+    border: none;
+}
+
+.nav-tabs > button:nth-child(2) {
+    opacity: .5;
+}
+
+.nav-tabs > button:nth-child(3) {
+    opacity: .2;
+}
+
+.level-progress {
+    width: 180px;
+    height: 15px;
+    border: 2px solid;
+    display: inline-table;
+}
+
+.level-progress-indicator {
+    background: #14fe17;
+    position: relative;
+    width: 70%;
+    height: 12px;
+}
+
+button {
+    color: #14fe17 !important;
+}
+
+.pip-footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+.row {
+    --bs-gutter-x: 20;
+}
+
+.center-image {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+}
+
+.center-image img {
+    margin: auto;
+    display: block;
+    position: relative;
+    max-height: 300px;
+    margin-top: 70px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
+}
+
+.navbar.pip-footer .col-3 {
+    margin: 2px 2px;
+    flex: 1 1 30%;
+    background: rgba(14, 255, 0, .09) ;
+    white-space: nowrap;
+    padding: 10px 265px 10px 20px;
+}
+
+.navbar.pip-footer .col-3.hp {
+    padding: 10px 265px 10px 20px;
+}
